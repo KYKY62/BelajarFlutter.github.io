@@ -1,6 +1,6 @@
 import 'dart:math';
 
-import 'package:belajar_provider_1/models/product.dart';
+import 'package:belajar_provider_1/Provider/product.dart';
 import 'package:flutter/material.dart';
 
 class Products with ChangeNotifier {
