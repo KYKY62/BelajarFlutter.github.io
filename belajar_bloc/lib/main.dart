@@ -1,6 +1,7 @@
 import 'package:belajar_bloc/bloc/counterBloc.dart';
 import 'package:belajar_bloc/pages/homePage.dart';
 import 'package:belajar_bloc/pages/homepagedua.dart';
+import 'package:belajar_bloc/pages/otherPage.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -19,10 +20,10 @@ class MyApp extends StatelessWidget {
           create: (context) => counter(),
         )
       ],
-      child: MaterialApp(
-        debugShowCheckedModeBanner: false,
-        home: HomePageDua(),
-      ),
+      child: MaterialApp(debugShowCheckedModeBanner: false, routes: {
+        '/': (context) => HomePageDua(),
+        '/otherPage': (context) => otherPage(),
+      }),
     );
   }
 }

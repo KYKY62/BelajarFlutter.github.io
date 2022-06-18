@@ -12,6 +12,12 @@ class HomePageDua extends StatelessWidget {
           centerTitle: true,
           title: const Text("Bloc Provider"),
         ),
+        floatingActionButton: FloatingActionButton(
+          onPressed: () {
+            Navigator.pushNamed(context, '/otherPage');
+          },
+          child: Icon(Icons.keyboard_arrow_right),
+        ),
         body: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
