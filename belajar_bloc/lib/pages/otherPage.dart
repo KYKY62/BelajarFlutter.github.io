@@ -15,7 +15,7 @@ class otherPage extends StatelessWidget {
         title: Text("Other Page"),
       ),
       body: Center(
-        child: BlocBuilder<counter, int>(
+        child: BlocBuilder(
           bloc: myCounter,
           builder: (context, state) {
             return Text(
